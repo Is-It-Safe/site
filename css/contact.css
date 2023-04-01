@@ -15,6 +15,7 @@ section {
   top: 31%;
   right: 10%;
   padding: 20px;
+  padding-top: 10px;
   width: 350px;
   height: 16px;
   border-radius: 4px;
@@ -30,20 +31,24 @@ section {
   font-weight: 300;
   font-size: 14px;
   color: white; 
+  letter-spacing: .01rem;
+  padding-top: 2px;
 }
 
 .snackMessageCloseIcon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
   color: white;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  margin-left: 70px;
+  font-size: 22px;
+  line-height: 18px;
   font-weight: 500;
 }
 .snackMessageInfoIcon {
   color: white;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 20px;
   margin-right: 10px;
   font-weight: 500;
@@ -143,5 +148,116 @@ button[type="submit"]:hover {
   }
   .imageContainer {
     display: none;
+  }
+
+  .snackMessage {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 20px;
+    padding-top: 10px;
+    width: 50vw;
+    height: 16px;
+    border-radius: 4px;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .snackMessage > span{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    line-height: 20px;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    font-weight: 300;
+    font-size: 14px;
+    color: white; 
+    letter-spacing: .01rem;
+    padding-top: 2px;
+  }
+  
+  .snackMessageCloseIcon {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    box-sizing: border-box;
+    height: 45px;
+    
+  }
+  .snackMessageInfoIcon {
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    height: 45px;
+  }
+  
+}
+
+@media only screen and (max-width: 500px ) {
+  section {
+    margin: 5% 10% 10%;
+  }
+  .imageContainer {
+    display: none;
+  }
+
+  .snackMessage {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    padding: 20px;
+    padding-top: 10px;
+    width: 89vw;
+    height: 16px;
+    border-radius: 4px;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .snackMessage > span{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    line-height: 20px;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    font-weight: 300;
+    font-size: 14px;
+    color: white; 
+    letter-spacing: .01rem;
+    padding-top: 2px;
+  }
+  
+  .snackMessageCloseIcon {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    box-sizing: border-box;
+    height: 45px;
+  }
+  .snackMessageInfoIcon {
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    height: 45px;
   }
 }
