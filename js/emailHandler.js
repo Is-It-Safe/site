@@ -36,7 +36,7 @@ submitBtn.addEventListener("click", (event) => {
   xhr.open("POST", "/send-email");
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onload = function() {
-    if (xhr.status === 200) {
+    if (xhr.status !== 200) {
       showMessage("Mensagem enviada com sucesso!", "#6202EE");
     } else {
       showMessage("Erro ao enviar mensagem!", "#EB3D3D");

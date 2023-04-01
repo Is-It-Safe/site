@@ -112,7 +112,7 @@ textarea:focus {
   margin-bottom: 20px;
 }
 
-button[type="submit"] {
+button[type="button"] {
   font-family: 'Poppins';
   border-radius: 6px;
   border: none;
@@ -127,7 +127,7 @@ button[type="submit"] {
   transition: all 0.2s ease;
 }
 
-button[type="submit"]:hover {
+button[type="button"]:hover {
   background-color: #4e39c4;
 }
 
