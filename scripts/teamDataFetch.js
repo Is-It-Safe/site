@@ -7,10 +7,6 @@ const myHeaders = {
     "Content-Type": "application/json"
 };
 
-var raw = JSON.stringify({
-    "sorts": [
-        {
-            "property": "Name",
             "direction": "ascending"
         }
     ],
