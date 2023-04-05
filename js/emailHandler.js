@@ -47,21 +47,4 @@ submitBtn.addEventListener("click", (event) => {
       }
     }, 2000);
   });
-//   const apiKey = '0FB4BDD7CBCC4068100B5263B2F86121360BA16F553FFBC42AC3A03D4531E3901C93E06A5F33852DDB0BF128888282B8';
-//   const from = 'habs.404@gmail.com';
-//   const to = 'habs.404@gmail.com';
-
-//   const url = `https://api.elasticemail.com/v2/email/send?apikey=${apiKey}&from=${from}&to=${to}&subject=${subject}&bodyHtml=${body}`;
-
-//   fetch(url)
-//     .then(response => response.json())
-//     .then(data => {
-//       console.log(data);
-//       showMessage("Mensagem enviada com sucesso!", "#6202EE");
-//     })
-//     .catch(error => {
-//       console.error(error);
-//       showMessage("Erro ao enviar mensagem!", "#EB3D3D");
-//     });
-//  });
 });
