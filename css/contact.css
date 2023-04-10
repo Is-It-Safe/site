@@ -112,7 +112,7 @@ textarea:focus {
   margin-bottom: 20px;
 }
 
-button[type="button"] {
+button[type="submit"] {
   font-family: 'Poppins';
   border-radius: 6px;
   border: none;

@@ -1,7 +1,8 @@
 
+
 $(document).ready(function() {
+
 const form = document.getElementById("emailForm");
-const submitBtn = document.getElementById("submitBtn");
 function showMessage(message, color) {
     let snackMessage = document.getElementById("snackMessage");
     snackMessage.innerHTML = `
@@ -21,30 +22,49 @@ function showMessage(message, color) {
   }
 
 
-submitBtn.addEventListener("click", (event) => {
-    event.preventDefault();
-   console.log("submitting form")
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+   
   const email = document.getElementById("email").value;
   const name = document.getElementById("name").value;
   const pronouns = document.getElementById("pronouns").value;
   const message = document.getElementById("message").value;
-  const subject = "New message from " + name;
-  const body = "Name: " + name +
-  "Email: " + email +
-  "Pronouns: " + pronouns +
-  "Message: " + message;
-  const mailtoLink = "mailto:contato@isitsafe.com.br" +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body);
+  const subject = "Menssagem de " + name
+  const apiKey = "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"
 
-  window.location.href = mailtoLink;
-
-    setTimeout(function() {
-      if (document.hasFocus()) {
-        showMessage("Mensagem enviada com sucesso!", "#6202EE");
-      } else {
-        showMessage("Erro ao enviar mensagem!", "#EB3D3D");
-      }
-    }, 2000);
+  const body = JSON.stringify({
+    sender: {
+      name: name,
+      email: email
+    },
+    to: [{ email: "contato@isitsafe.com.br"}],
+    templateId: 1,
+    subject:subject,
+    params: {
+      name: name,
+      pronouns: pronouns,
+      message: message,
+      email: email
+    }
   });
+
+  fetch('https://api.sendinblue.com/v3/smtp/email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'api-key': apiKey
+    },
+    body: body
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    showMessage("Mensagem enviada com sucesso!", "#6202EE");
+  })
+  .catch(error => {
+    console.error(error);
+    showMessage("Erro ao enviar mensagem!", "#EB3D3D");
+  });
+});
+
 });
