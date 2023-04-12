@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Header } from '../../components/Header/Header';
 import { SubsCriptionModal } from '../../components/SubscriptionModal/SubscriptionModal';
-import { PageLayout } from '../../layout/page-layout';
 
 import './Team.styles.css';
 
