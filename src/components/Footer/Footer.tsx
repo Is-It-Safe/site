@@ -8,7 +8,7 @@ export const Footer = () => {
 	return (
 		<>
 			<footer id="contact">
-				<a id="logo" href="index.html">
+				<a id="logo" href="home">
 					<img src={logo} alt="Is it safe?" />
 				</a>
 				<div className="contact">

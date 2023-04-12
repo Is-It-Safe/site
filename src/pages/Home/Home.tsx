@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import muckupHome from '../../assets/mockuphome-1.png';
+
+import mockupHome from '../../assets/mockuphome-1.png';
 import ballon1 from '../../assets/ballon1.png';
 import ballon2 from '../../assets/ballon2.png';
 import rainbow from '../../assets/rainbow.png';
@@ -27,7 +28,7 @@ export const Home = () => {
 						experiências e avalie estabelecimentos.
 					</p>
 				</div>
-				<img className="mockuphome" src={muckupHome} alt="" />
+				<img className="mockuphome" src={mockupHome} alt="" />
 			</section>
 			<section>
 				<div id="slogan">
@@ -65,7 +66,7 @@ export const Home = () => {
 							acredita na nossa causa e <span>gostaria</span> de
 							contribuir qualquer valor é muito bem-vindo.
 						</p>
-						<a className="button" href="doacoes.html">
+						<a className="button" href="donations">
 							Quero contribuir
 						</a>
 					</div>

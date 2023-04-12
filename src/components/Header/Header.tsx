@@ -1,5 +1,6 @@
-import './Header.styles.css';
 import logoWhite from '../../assets/logo-white.png';
+
+import './Header.styles.css';
 
 interface HeaderProps {
 	isMainPage?: boolean;
@@ -34,7 +35,7 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 				<header>
 					<nav id="nav-geral">
 						<div className="topmenu-logo">
-							<a id="logo" href="index.html">
+							<a id="logo" href="home">
 								<img src={logoWhite} alt="Is it safe?" />
 							</a>
 						</div>
