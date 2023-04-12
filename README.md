@@ -43,7 +43,6 @@ The ensuing months have been a lot of hard work and effort. We are working hard 
 [![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/isitsafeapp/)
 [![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@isitsafe.com.br)
 
-
-
 <!-- Contact Links (where to find Is It Safe?) -->
-[Website]: https://www.isitsafe.com.br
+
+[website]: https://www.isitsafe.com.br
