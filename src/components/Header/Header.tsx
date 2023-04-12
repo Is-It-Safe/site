@@ -11,10 +11,10 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 			{isMainPage ? (
 				<header>
 					<nav className="topmenu">
-						<a href="sobre.html">sobre</a>
-						<a href="nossaequipe.html">nossa equipe</a>
-						<a href="doacoes.html">doações</a>
-						<a href="contact.html">contato</a>
+						<a href="about">sobre</a>
+						<a href="team">nossa equipe</a>
+						<a href="donations">doações</a>
+						<a href="contact">contato</a>
 					</nav>
 					<nav className="topmenu__mobile">
 						<button className="btn-toggle" id="menu-toggle">
@@ -23,10 +23,10 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 							<div className="line"></div>
 						</button>
 						<ul className="topmenu__mobile__list">
-							<a href="sobre.html">sobre</a>
-							<a href="nossaequipe.html">nossa equipe</a>
-							<a href="doacoes.html">doações</a>
-							<a href="contact.html">contato</a>
+							<a href="about">sobre</a>
+							<a href="team">nossa equipe</a>
+							<a href="donations">doações</a>
+							<a href="contact">contato</a>
 						</ul>
 					</nav>
 				</header>
@@ -39,15 +39,15 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 							</a>
 						</div>
 						<div className="topmenu">
-							<a href="sobre.html">sobre</a>
-							<a href="nossaequipe.html">nossa equipe</a>
-							<a href="doacoes.html">doações</a>
-							<a href="contact.html">contato</a>
+							<a href="about">sobre</a>
+							<a href="team">nossa equipe</a>
+							<a href="donations">doações</a>
+							<a href="contact">contato</a>
 						</div>
 					</nav>
 					<nav className="topmenu__mobile">
 						<div className="topmenu-logo">
-							<a id="logo" href="index.html">
+							<a id="logo" href="home">
 								<img src={logoWhite} alt="Is it safe?" />
 							</a>
 						</div>
@@ -61,9 +61,9 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 							className="topmenu__mobile__list"
 							style={{ display: 'none' }}
 						>
-							<a href="sobre.html">sobre</a>
-							<a href="nossaequipe.html">nossa equipe</a>
-							<a href="doacoes.html">doações</a>
+							<a href="about">sobre</a>
+							<a href="team">nossa equipe</a>
+							<a href="donations">doações</a>
 						</ul>
 					</nav>
 				</header>

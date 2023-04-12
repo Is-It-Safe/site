@@ -4,6 +4,11 @@
 	gap: 5%;
 }
 
+#comosurgiu {
+	display: flex;
+	flex-direction: row;
+}
+
 main div {
 	padding: 0 0 0 3%;
 }
@@ -24,11 +29,12 @@ blockquote {
 
 @media only screen and (max-width: 912px) {
 	#about {
-		flex-direction: row-reverse;
+		flex-direction: column-reverse;
 		display: flex;
 	}
 
 	#comosurgiu {
+		display: flex;
 		flex-direction: column-reverse;
 	}
 

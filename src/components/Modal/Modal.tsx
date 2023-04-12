@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { CloseIcon, Container, Content, Header } from './styled';
+import { CloseIcon, Container, Content, Header } from './Modal.styles';
 import { Frame } from '../../layout';
 
 type IModal = {

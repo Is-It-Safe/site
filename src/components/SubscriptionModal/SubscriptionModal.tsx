@@ -1,12 +1,12 @@
 import { Controller, useForm } from 'react-hook-form';
-import { Button } from '../../components/Button';
-import { Input } from '../../components/Input';
-import { Form } from '../../components/Form';
+import { Button } from '../Button/Button';
+import { Input } from '../Input/Input';
+import { Form } from '../Form/Form';
 import { Frame } from '../../layout';
-import { Modal } from '../../components/Modal';
+import { Modal } from '../Modal/Modal';
 import { SelectComponent } from '../Select';
 import { BigInput } from '../Input/BigInput';
-import { SubTitle, Title, TitleContainer } from './styled';
+import { SubTitle, Title, TitleContainer } from './SubscriptionModal.styles';
 
 type ISubscriptionModal = {
 	showmodal: boolean;
