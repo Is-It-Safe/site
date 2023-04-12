@@ -11,8 +11,6 @@ import { Header } from '../../components/Header/Header';
 import './Home.styles.css';
 
 export const Home = () => {
-	const [showModal, setShowModal] = useState<boolean>(true);
-
 	return (
 		<>
 			<Header isMainPage />

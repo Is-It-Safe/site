@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { UseFormHandleSubmit } from 'react-hook-form';
+import { FormContainer } from './Form.styles';
 
 type IForm = {
 	handleSubmit: UseFormHandleSubmit<any>;
@@ -9,13 +10,13 @@ type IForm = {
 
 const Form = ({ handleSubmit, onSubmit, children }: IForm) => {
 	return (
-		<form
+		<FormContainer
 			style={{ display: 'flex', flexDirection: 'column', flex: 1 }}
 			autoComplete="on"
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			{children}
-		</form>
+		</FormContainer>
 	);
 };
 

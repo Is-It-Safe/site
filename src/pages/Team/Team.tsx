@@ -1,11 +1,20 @@
+import { useState } from 'react';
 import { Header } from '../../components/Header/Header';
+import { SubsCriptionModal } from '../../components/SubscriptionModal/SubscriptionModal';
+import { PageLayout } from '../../layout/page-layout';
 
 import './Team.styles.css';
 
 export const Team = () => {
+	const [showModal, setShowModal] = useState<boolean>(false);
+
 	return (
 		<>
 			<Header />
+			<SubsCriptionModal
+				showmodal={showModal}
+				setShowModal={setShowModal}
+			/>
 			<main>
 				<section id="team-main">
 					<h2>Faça parte</h2>
@@ -20,8 +29,15 @@ export const Team = () => {
 					>
 						ATADOS
 					</a>
-					<a id="link" href="https://forms.gle/be1BbTEXmQz4iLn59">
-						FORMS DE INSCRIÇÃO
+					<a
+						id="link"
+						href=""
+						onClick={() => {
+							event?.preventDefault();
+							setShowModal(true);
+						}}
+					>
+						QUER SER VOLUNTÁRIO?
 					</a>
 				</section>
 				<section>
