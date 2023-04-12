@@ -1,25 +1,16 @@
 import { ReactNode } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
+import { About } from '../pages/About/About';
+import { Contact } from '../pages/Contact/Contact';
+import { Donations } from '../pages/Donations/Donations';
 // import { useUser } from '../providers/UserProvider';
 
-import { Home } from '../pages/Home';
+import { Home } from '../pages/Home/Home';
+import { Team } from '../pages/Team/Team';
 
 interface ChildrenTypes {
 	children: ReactNode;
 }
-
-// const Private = ({ children }: ChildrenTypes): JSX.Element => {
-// 	const { user } = useUser();
-// 	if (!user) {
-// 		return <Navigate to="/home" />;
-// 	}
-
-// 	return (
-// 		<div className="flex flex-col items-center w-full h-full">
-// 			{children}
-// 		</div>
-// 	);
-// };
 
 const Public = ({ children }: ChildrenTypes): JSX.Element => {
 	return <>{children}</>;
@@ -34,6 +25,38 @@ export const Router = () => {
 				element={
 					<Public>
 						<Home />
+					</Public>
+				}
+			/>
+			<Route
+				path="/team"
+				element={
+					<Public>
+						<Team />
+					</Public>
+				}
+			/>
+			<Route
+				path="/contact"
+				element={
+					<Public>
+						<Contact />
+					</Public>
+				}
+			/>
+			<Route
+				path="/donations"
+				element={
+					<Public>
+						<Donations />
+					</Public>
+				}
+			/>
+			<Route
+				path="/about"
+				element={
+					<Public>
+						<About />
 					</Public>
 				}
 			/>
