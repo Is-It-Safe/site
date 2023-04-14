@@ -71,7 +71,7 @@ export const Contact = () => {
 				.catch(error => {
 					console.error(error);
 					showMessage('Erro ao enviar mensagem!', '#EB3D3D');
-					});
+				});
 		}
 	}
 
