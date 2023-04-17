@@ -1,0 +1,38 @@
+name: Deploy CI/CD
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+[0-9]'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Setup Node.js and install dependencies
+      - name: Setup Node.js and install dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - run: npm ci
+
+      # Test the code
+      - name: Run tests
+        run: npm test
+
+      # Build the app
+      - name: Build the app
+        run: npm run build
+
+      # Deploy to Firebase Hosting
+      - name: Deploy to Firebase Hosting
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting is-it-safe-29b67
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
