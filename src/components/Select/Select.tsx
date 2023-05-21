@@ -3,7 +3,7 @@ import { BasicSelect, ErrorMessage, LabelSelect } from './styled';
 import { FieldError } from 'react-hook-form';
 import Select from 'react-select';
 
-type Option = { label: string; value: string };
+export type Option = { label: string; value: string };
 
 interface ISelect {
 	label?: ReactNode;

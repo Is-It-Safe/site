@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonProps } from '.';
+import { ButtonProps } from './Button';
 
 export const BasicButton = styled.button.attrs((props) => ({
 	type: props.type || 'button',

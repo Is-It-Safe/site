@@ -1,10 +1,10 @@
 import { Controller, useForm } from 'react-hook-form';
-import { Button } from '../../components/Button';
-import { Input } from '../../components/Input';
-import { Form } from '../../components/Form';
+import { Button } from '../Button/Button';
+import { Input } from '../Input/Input';
+import { Form } from '../Form/Form';
 import { Frame } from '../../layout';
-import { Modal } from '../../components/Modal';
-import { SelectComponent } from '../Select';
+import { Modal } from '../Modal/Modal';
+import { SelectComponent } from '../Select/Select';
 import { BigInput } from '../Input/BigInput';
 import { SubTitle, Title, TitleContainer } from './styled';
 
@@ -38,6 +38,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 	});
 	const onSubmit = (data: any) => {
 		console.log(data);
+		setShowModal(false);
 	};
 	const options = [
 		{ value: 'yes', label: 'Sim' },
@@ -156,7 +157,9 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 						error={errors.portfolio}
 					/>
 					<Frame direction="row" gap={18}>
-						<Button grow>CANCELAR</Button>
+						<Button grow onClick={() => setShowModal(false)}>
+							CANCELAR
+						</Button>
 						<Button grow type="submit" primary>
 							ENVIAR
 						</Button>
