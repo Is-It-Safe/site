@@ -74,6 +74,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 							// validate: (value) => validationFunction(value) || errorMessage
 						})}
 						error={errors.name}
+						data-testid="input-name"
 					/>
 					<Input
 						label="E-mail"
@@ -81,11 +82,13 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 							required: 'Precisamos do seu email',
 						})}
 						error={errors.email}
+						data-testid="input-email"
 					/>
 					<Input
 						label="Alguém te indicou? Quem?"
 						{...register('indication', {})}
 						error={errors.indication}
+						data-testid="input-indication"
 					/>
 					<Frame direction="row" gap={18}>
 						<Input
@@ -94,6 +97,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 								required: 'Por favor, responda',
 							})}
 							error={errors.pronouns}
+							data-testid="input-pronouns"
 						/>
 						<Controller
 							control={control}
@@ -105,6 +109,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 										setValue('partOfCommunity', value.value)
 									}
 									error={errors.partOfCommunity}
+									dataTestid="input-part-of-community"
 								/>
 							)}
 							rules={{ required: 'Por favor, responda' }}
@@ -117,6 +122,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 							required: 'Campo não pode ser vazio',
 						})}
 						error={errors.about}
+						data-testid="input-about"
 					/>
 					<BigInput
 						label="Porque quer ser voluntário?"
@@ -124,6 +130,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 							required: 'Campo não pode ser vazio',
 						})}
 						error={errors.reason}
+						data-testid="input-reason"
 					/>
 					<Frame direction="row" gap={18}>
 						<Input
@@ -132,6 +139,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 								required: 'Por favor, responda',
 							})}
 							error={errors.interest}
+							data-testid="input-interest"
 						/>
 						<Controller
 							control={control}
@@ -143,6 +151,7 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 										setValue('timeExperience', value.value)
 									}
 									error={errors.timeExperience}
+									dataTestid="input-time-experience"
 								/>
 							)}
 							rules={{ required: 'Por favor, responda' }}
@@ -155,12 +164,22 @@ const SubsCriptionModal = ({ showmodal, setShowModal }: ISubscriptionModal) => {
 							required: 'Por favor, responda',
 						})}
 						error={errors.portfolio}
+						data-testid="input-portifolio"
 					/>
 					<Frame direction="row" gap={18}>
-						<Button grow onClick={() => setShowModal(false)}>
+						<Button
+							grow
+							onClick={() => setShowModal(false)}
+							data-testid="button-cancel"
+						>
 							CANCELAR
 						</Button>
-						<Button grow type="submit" primary>
+						<Button
+							grow
+							type="submit"
+							primary
+							data-testid="button-send"
+						>
 							ENVIAR
 						</Button>
 					</Frame>

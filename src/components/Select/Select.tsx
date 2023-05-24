@@ -2,17 +2,25 @@ import { ReactNode, useState } from 'react';
 import { BasicSelect, ErrorMessage, LabelSelect } from './styled';
 import { FieldError } from 'react-hook-form';
 import Select from 'react-select';
+import StateManagedSelect from 'react-select';
 
 export type Option = { label: string; value: string };
 
-interface ISelect {
+type ISelect = {
 	label?: ReactNode;
 	error?: FieldError | undefined;
 	options: Array<Option>;
 	onChange: (value: Option) => void;
-}
+	dataTestid?: string;
+};
 
-const SelectComponent = ({ label, error, options, onChange }: ISelect) => {
+const SelectComponent = ({
+	label,
+	error,
+	options,
+	onChange,
+	dataTestid,
+}: ISelect) => {
 	const hasError = !!error;
 	const errorMessage = error?.message;
 	const [selected, setSelected] = useState<Option | null>(null);
@@ -25,7 +33,7 @@ const SelectComponent = ({ label, error, options, onChange }: ISelect) => {
 	};
 
 	return (
-		<BasicSelect>
+		<BasicSelect data-testid={dataTestid}>
 			<LabelSelect hasError={hasError}>{label}</LabelSelect>
 			<Select
 				options={options}
@@ -52,7 +60,11 @@ const SelectComponent = ({ label, error, options, onChange }: ISelect) => {
 					},
 				}}
 			/>
-			{hasError && <ErrorMessage>{errorMessage}</ErrorMessage>}
+			{hasError && (
+				<ErrorMessage data-testid="input-error">
+					{errorMessage}
+				</ErrorMessage>
+			)}
 		</BasicSelect>
 	);
 };
