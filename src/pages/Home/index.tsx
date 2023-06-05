@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SubsCriptionModal } from '../../components/SubscriptionModal';
+import { SubsCriptionModal } from '../../components/SubscriptionModal/SubscriptionModal';
 import { PageLayout } from '../../layout/page-layout';
 
 const Home = () => {
