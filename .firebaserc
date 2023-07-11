@@ -1,18 +1,5 @@
 {
   "projects": {
     "default": "is-it-safe-29b67"
-  },
-  "targets": {
-    "is-it-safe-29b67": {
-      "hosting": {
-        "default": [
-          "is-it-safe-29b67"
-        ],
-        "test": [
-          "isitsafe-site-test"
-        ]
-      }
-    }
-  },
-  "etags": {}
+  }
 }

@@ -15,8 +15,8 @@ export const Container = styled.div<ModalProps>`
 	align-items: center;
 	background: rgba(24, 29, 32, 0.1);
 	backdrop-filter: blur(8px);
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding: 32px 0px 32px 0px;
+	z-index: 1;
 `;
 
 export const Content = styled.div`
@@ -27,6 +27,7 @@ export const Content = styled.div`
 	max-width: 640px;
 	border-radius: 12px;
 	background-color: #ffffff;
+	padding: 32px 48px 32px 32px;
 `;
 
 export const Header = styled.div`

@@ -6,7 +6,7 @@ import { Frame } from '../../layout';
 import { Modal } from '../Modal/Modal';
 import { SelectComponent } from '../Select/Select';
 import { BigInput } from '../Input/BigInput';
-import { SubTitle, Title, TitleContainer } from './styled';
+import { SubTitle, Title, TitleContainer } from './SubscriptionModal.styles';
 
 type ISubscriptionModal = {
 	showmodal: boolean;

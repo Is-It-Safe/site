@@ -24,11 +24,7 @@ jobs:
           
       - name: Install Dependencies
         run: yarn install
-
-      # Test the code
-#       - name: Run tests
-#         run: yarn test
-
+        
       # Build the app
       - name: Build the app
         run: yarn build

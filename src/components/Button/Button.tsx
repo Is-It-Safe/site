@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { BasicButton, TextButton } from './styled';
+import { BasicButton, TextButton } from './Button.styles';
 
 export type ButtonProps = {
 	primary?: boolean;

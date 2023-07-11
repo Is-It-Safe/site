@@ -1,5 +1,5 @@
 import { ReactNode, forwardRef } from 'react';
-import { BasicInput, ErrorMessage, LabelInput } from './styled';
+import { BasicInput, ErrorMessage, LabelInput } from './Input.style';
 import { FieldError } from 'react-hook-form';
 import './styles.css';
 
