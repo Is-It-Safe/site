@@ -78,7 +78,6 @@ export const Router = () => {
 					</Public>
 				}
 			/>
-			<Route
 				path="*"
 				element={<h1 className="text-white">Error 404</h1>}
 			/>
