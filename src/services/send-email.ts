@@ -16,7 +16,7 @@ export default function SendEmail(
 	} else {
 		axios
 			.post(
-				'https://api.sendinblue.com/v3/smtp/email',
+				'https://api.brevo.com/v3/smtp/email',
 				{
 					sender: {
 						name: name,
