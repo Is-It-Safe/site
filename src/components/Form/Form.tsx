@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, RefObject } from 'react';
 import { UseFormHandleSubmit } from 'react-hook-form';
 import { FormContainer } from './Form.styles';
 
@@ -9,6 +9,7 @@ type IForm = React.DetailedHTMLProps<
 	handleSubmit: UseFormHandleSubmit<any>;
 	onSubmit: (data: any) => void;
 	children: ReactNode;
+	ref: ((instance: HTMLFormElement | null) => void) | RefObject<HTMLFormElement> | null | undefined;
 };
 
 const Form = ({ handleSubmit, onSubmit, children, ...props }: IForm) => {
