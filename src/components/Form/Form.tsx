@@ -9,7 +9,7 @@ type IForm = React.DetailedHTMLProps<
 	handleSubmit: UseFormHandleSubmit<any>;
 	onSubmit: (data: any) => void;
 	children: ReactNode;
-	ref: ((instance: HTMLFormElement | null) => void) | RefObject<HTMLFormElement> | null | undefined;
+	ref?: ((instance: HTMLFormElement | null) => void) | RefObject<HTMLFormElement> | null | undefined;
 };
 
 const Form = ({ handleSubmit, onSubmit, children, ...props }: IForm) => {
