@@ -32,7 +32,9 @@ jobs:
       # Build the app
       - name: Build the app
         run: yarn build
-
+        env:
+          VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
+          
       # Deploy to Firebase Hosting
       - name: Deploy to Firebase Hosting
         uses: w9jds/firebase-action@master
