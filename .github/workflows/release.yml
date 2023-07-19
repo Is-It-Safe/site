@@ -24,22 +24,16 @@ jobs:
           
       - name: Install Dependencies
         run: yarn install
-
-      # Test the code
-#       - name: Run tests
-#         run: yarn test
-
+        
       # Build the app
       - name: Build the app
         run: yarn build
         env:
           VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
           
-      # Deploy to Firebase Hosting
-      - name: Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@master
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          args: deploy --only hosting isitsafe-site-test
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: isitsafe-site-release
+          channelId: live
