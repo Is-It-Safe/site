@@ -12,7 +12,7 @@ export const BasicInput = styled.div`
 	width: 100%;
 `;
 
-export const LabelInput = styled.div<IInput>`
+export const LabelInput = styled.label<IInput>`
 	color: ${(props) => (props.hasError ? '#EB3D3D' : '#5b3cf1')};
 	font-style: normal;
 	font-weight: 400;

@@ -1,0 +1,13 @@
+.legal{
+    display: flex;
+    flex-direction: column;
+    width: 20vw; 
+    box-sizing: border-box;
+    padding-left: 3vw;
+
+   
+}
+
+.legal > br{
+        display: none;
+}
