@@ -11,13 +11,16 @@ type IModal = {
 
 const Modal = ({ header, children, showModal, setShowModal }: IModal) => {
 	return (
-		<Container showModal={showModal}>
+		<Container data-testid="modal-container" showModal={showModal}>
 			<Content>
 				<Header>
 					<Frame direction="column" gap={4}>
 						{header}
 					</Frame>
-					<CloseIcon onClick={() => setShowModal(false)}>
+					<CloseIcon
+						data-testid="close-modal"
+						onClick={() => setShowModal(false)}
+					>
 						<img
 							src="close.svg"
 							width={24}

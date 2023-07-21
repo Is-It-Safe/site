@@ -3,6 +3,7 @@ import instagram from '../../assets/instagram.png';
 import twitter from '../../assets/twitter.png';
 import linkedin from '../../assets/linkedin.png';
 import whatsapp from '../../assets/whatsapp.png';
+import './Footer.styles.css';
 
 export const Footer = () => {
 	return (
@@ -15,6 +16,15 @@ export const Footer = () => {
 					<h3>Dúvidas e Suporte</h3>
 					<a id="link" href="contato@isitsafe.com.br">
 						contato@isitsafe.com.br
+					</a>
+				</div>
+				<div  className="legal">
+					<a id="link" href="privacy_policy">
+					Politica de Privacidade
+					</a>
+					<br />
+					<a id="link" href="terms_and_conditions">
+					Termos e Condições
 					</a>
 				</div>
 				<div className="socialmedia">
