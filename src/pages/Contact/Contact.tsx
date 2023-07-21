@@ -73,9 +73,6 @@ export const Contact = () => {
 				<Styles.FormContainer>
 					<Styles.Form
 						id="emailForm"
-						action="mailto:contato@isitsafe.com.br"
-						method="post"
-						encType="text/plain"
 					>
 						<label htmlFor="name">Nome</label>
 						<Styles.Input
