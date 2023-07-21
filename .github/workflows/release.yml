@@ -24,20 +24,17 @@ jobs:
           
       - name: Install Dependencies
         run: yarn install
-
-      # Test the code
-#       - name: Run tests
-#         run: yarn test
-
+        
       # Build the app
       - name: Build the app
         run: yarn build
-
-      # Deploy to Firebase Hosting
-      - name: Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting isitsafe-site-test
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
+          
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: isitsafe-site-release
+          channelId: live
 
