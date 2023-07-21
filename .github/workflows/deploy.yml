@@ -25,17 +25,16 @@ jobs:
       - name: Install Dependencies
         run: yarn install
         
-       # Build the app
+      # Build the app
       - name: Build the app
         run: |
           tsc
           vite build
-
-      # Deploy to Firebase
-      - name: Deploy to Firebase
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        env:
+          VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          repoToken: "${{ secrets.GITHUB_TOKEN}}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: is-it-safe-29b67
           channelId: live
