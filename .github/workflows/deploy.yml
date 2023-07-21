@@ -20,20 +20,20 @@ jobs:
         with:
           node-version: '16.x'
           yarn-version: '1.x'
-
-      # Install Dependencies
+          
+          
       - name: Install Dependencies
         run: yarn install
 
+      # Run TypeScript
+      - name: Run TypeScript
+        run: tsc
+
       # Build the app
       - name: Build the app
-        parallel:
-          - name: Run TypeScript
-            run: tsc
-          - name: Run Vite
-            run: vite build
+        run: vite build
         env:
-            VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
+          VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
 
       # Deploy to Firebase
       - name: Deploy to Firebase
