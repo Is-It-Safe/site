@@ -7,6 +7,8 @@ import { Donations } from '../pages/Donations/Donations';
 
 import { Home } from '../pages/Home/Home';
 import { Team } from '../pages/Team/Team';
+import { TermsAndConditions } from '../pages/TermsAndConditions/TermsAndConditions';
+import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy';
 
 interface ChildrenTypes {
 	children: ReactNode;
@@ -57,6 +59,22 @@ export const Router = () => {
 				element={
 					<Public>
 						<About />
+					</Public>
+				}
+			/>
+			<Route
+				path="/terms_and_conditions"
+				element={
+					<Public>
+						<TermsAndConditions />
+					</Public>
+				}
+			/>
+			<Route
+				path="/privacy_policy"
+				element={
+					<Public>
+						<PrivacyPolicy />
 					</Public>
 				}
 			/>
