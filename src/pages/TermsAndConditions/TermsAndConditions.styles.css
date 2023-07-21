@@ -1,0 +1,70 @@
+
+#termsandconditions{
+	padding: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+#body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+.Document{
+	border-left: #ffffff 30px solid;
+	width: 80%;
+	background-color: #ffffff;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.Document > p{
+	width: 100%;
+    margin: -20px;
+	color: black;
+    text-align: justify;
+}
+
+.Document > h1{
+	color: black;
+	font-size: 20px;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	margin-left: -20px;
+	
+}
+
+.Document> h2{
+	color: black;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+ol {
+	counter-reset: list;
+  }
+  ol > li {
+	list-style: none;
+	font-size: 13px;
+	
+  }
+  ol > li:before {
+	content: counter(list, lower-alpha) ") ";
+	counter-increment: list;
+	font-weight: 800;
+	font-size: 14px;
+  }
+
+  .center {
+	  text-align: center!important;
+  }
+  
+

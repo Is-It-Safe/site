@@ -25,7 +25,11 @@ const BaseInput = ({ label, error, ...props }: IInput, ref: Ref) => {
 				ref={ref}
 				{...props}
 			/>
-			{hasError && <ErrorMessage>{errorMessage}</ErrorMessage>}
+			{hasError && (
+				<ErrorMessage data-testid="input-error">
+					{errorMessage}
+				</ErrorMessage>
+			)}
 		</BasicInput>
 	);
 };
