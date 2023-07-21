@@ -21,32 +21,18 @@ jobs:
           node-version: '16.x'
           yarn-version: '1.x'
           
+          
       - name: Install Dependencies
         run: yarn install
-
-      # Run TypeScript
-      - name: Run TypeScript
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
-          yarn-version: '1.x'
-        run: tsc
-
+        
       # Build the app
       - name: Build the app
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
-          yarn-version: '1.x'
-        run: vite build
+        run: yarn build 
         env:
           VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
-
-      # Deploy to Firebase
-      - name: Deploy to Firebase
-        uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          repoToken: "${{ secrets.GITHUB_TOKEN}}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: is-it-safe-29b67
           channelId: live
