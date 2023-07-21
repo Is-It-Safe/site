@@ -7,13 +7,5 @@ export default defineConfig({
   plugins: [
      react(),
   ],
-  build: {
-    rollupOptions: {
-      output: {
-       format: 'esm',
-        assetFileNames: '[name].[contenthash].tsx',
-      },
-    },
-  },
 });
 

@@ -68,7 +68,7 @@ jobs:
         
       # Build the app
       - name: Build the app
-        run: yarn build
+        run: vite tsc && build
         env:
           VITE_EMAIL_API_KEY: ${{ secrets.VITE_EMAIL_API_KEY }}
           
