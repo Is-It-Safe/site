@@ -27,11 +27,6 @@ jobs:
         
        # Build the app
       - name: Build the app
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.x
-          yarn-version: 1.x
-
         run: |
           tsc
           vite build
