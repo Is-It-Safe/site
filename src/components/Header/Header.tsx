@@ -1,12 +1,30 @@
 import logoWhite from '../../assets/logo-white.png';
-
+import { useState } from 'react';
 import './Header.styles.css';
+
 
 interface HeaderProps {
 	isMainPage?: boolean;
 }
 
+
 export const Header = ({ isMainPage }: HeaderProps) => {
+	const [mobileMenuDisplay, setMobileMenuDisplay] = useState<string>(
+		'none'
+	);
+
+	const closeMenu = () => {
+		setMobileMenuDisplay('none');
+	};
+
+	const toggleMenu = () => {
+		if (mobileMenuDisplay === 'none') {
+			setMobileMenuDisplay('flex');
+		} else {
+			closeMenu();
+		}
+	};
+
 	return (
 		<>
 			{isMainPage ? (
@@ -17,13 +35,13 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 						<a href="donations">doações</a>
 						<a href="contact">contato</a>
 					</nav>
-					<nav className="topmenu__mobile">
-						<button className="btn-toggle" id="menu-toggle">
+					<nav className="topmenu__mobile__main">
+						<button className="btn-toggle" id="menu-toggle" onClick={toggleMenu}>
 							<div className="line"></div>
 							<div className="line"></div>
 							<div className="line"></div>
 						</button>
-						<ul className="topmenu__mobile__list">
+						<ul className="topmenu__mobile__list" style={{ display: mobileMenuDisplay }} onBlur={closeMenu}>
 							<a href="about">sobre</a>
 							<a href="team">nossa equipe</a>
 							<a href="donations">doações</a>
@@ -52,7 +70,7 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 								<img src={logoWhite} alt="Is it safe?" />
 							</a>
 						</div>
-						<button className="btn-toggle" id="menu-toggle">
+						<button className="btn-toggle" id="menu-toggle" onClick={toggleMenu}>
 							<div className="line"></div>
 							<div className="line"></div>
 							<div className="line"></div>
@@ -60,11 +78,13 @@ export const Header = ({ isMainPage }: HeaderProps) => {
 
 						<ul
 							className="topmenu__mobile__list"
-							style={{ display: 'none' }}
+							style={{ display: mobileMenuDisplay }}
+							onBlur={closeMenu}
 						>
 							<a href="about">sobre</a>
 							<a href="team">nossa equipe</a>
 							<a href="donations">doações</a>
+							<a href="contact">contato</a>
 						</ul>
 					</nav>
 				</header>
