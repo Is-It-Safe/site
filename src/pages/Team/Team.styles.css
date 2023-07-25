@@ -44,6 +44,10 @@ section p:not(.teamcard p) {
 		padding: 10% 10% 0 10%;
 	}
 
+	main{
+		padding-top: 15vh;
+	}
+
 	section p:not(.teamcard p) {
 		padding: 2% 0;
 	}

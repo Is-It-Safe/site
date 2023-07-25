@@ -4,10 +4,26 @@
     width: 20vw; 
     box-sizing: border-box;
     padding-left: 3vw;
-
    
+}
+
+#link-mobile{
+    display: none;
 }
 
 .legal > br{
         display: none;
 }
+
+@media only screen and (max-width: 820px) {
+    .legal{
+       display: none;
+    }
+    #link-mobile{
+        display: inline-block;
+        color: #251650;
+        font-weight: 700;
+        padding: 0 2% 0 0;
+    }
+}
+
