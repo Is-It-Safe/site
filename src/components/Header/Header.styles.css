@@ -51,7 +51,7 @@ nav {
 
 .btn-toggle {
 	position: relative;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	cursor: pointer;
 	user-select: none;
@@ -211,8 +211,23 @@ nav {
 	background-color: rgba(71, 62, 139, 1);
 }
 
-@media only screen and (max-width: 820px) {
-	header {
+.topmenu__mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 912px) {
+     #nav-geral {
+		display: none;
+	}
+
+	.btn-toggle {
+		display: flex;
+	}
+
+	.topmenu__mobile {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 8%;
 		background: linear-gradient(
 			55deg,
 			rgba(71, 62, 139, 1) 0%,
@@ -221,17 +236,14 @@ nav {
 			rgba(44, 18, 86, 1) 100%
 		);
 	}
-
-	#nav-geral {
-		display: none;
-	}
-
-	.topmenu__mobile {
-		display: flex;
-		justify-content: space-between;
+	.topmenu__mobile__main {
+		display:flex;
+		justify-content: flex-end;
 		padding: 0 8%;
-		position: relative;
-		z-index: 10;
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		background-color: transparent;
 	}
 
 	.topmenu {
@@ -239,12 +251,6 @@ nav {
 	}
 
 	.follower {
-		display: none;
-	}
-}
-
-@media only screen and (min-width: 812px) {
-	.topmenu__mobile {
 		display: none;
 	}
 }

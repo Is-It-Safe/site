@@ -36,20 +36,72 @@
 	height: 24px;
 }
 
-@media only screen and (max-width: 912px) {
+#qrcode{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: left;
+	padding-left: 2vw;
+	padding-bottom: 2vh;
+	
+
+}
+
+#qrcode > img{
+	width: 40%;
+	height: auto;
+	padding-bottom: 5vh;
+}
+
+#qrcode > span{
+	font-size: 1.3vw;
+	
+}
+
+
+@media screen and (max-width: 912px) {
 	#querocontribuir,
 	#bannergooders {
 		flex-direction: row;
 	}
 
 	#donations {
-		margin: 0 5% 5% 5%;
+		margin: 0%;
+		padding: 0%;
+
 	}
 
-	p,
-	div {
-		padding: 3% 0;
+    #querocontribuir{
+	display: flex;
+	align-items: center;
+	padding: 0%;padding: 15vh 10vw 0 11vw;
 	}
+    #qrcode{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	    padding: 0%;
+		padding-bottom: 2vh;
+	}
+
+	#qrcode > img{
+		width: 50%;
+		height: auto;
+		padding-bottom: 3vh;
+	}
+
+	#qrcode > span{
+		font-size: 2vw;
+		width: 81vw;
+		
+		
+	}
+	
 
 	#bannergooders {
 		padding: 8%;
@@ -58,5 +110,38 @@
 	#buttongooders {
 		max-width: 40%;
 		margin: 3% 3% 0 3%;
+	}
+}
+
+
+@media screen and (max-width: 540px) {
+
+	
+	#qrcode > img{
+		width: 80%;
+		height: auto;
+		padding-bottom: 3vh;
+	}
+
+	#qrcode > span{
+		font-size: 3vw;
+		width: 81vw;
+		
+		
+	}
+
+	#bannergooders {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 281px) {
+
+	#qrcode > span{
+		font-size: 4vw;
+		width: 81vw;
+		
+		
 	}
 }

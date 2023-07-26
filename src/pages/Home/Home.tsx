@@ -28,48 +28,50 @@ export const Home = () => {
 				</div>
 				<img className="mockuphome" src={mockupHome} alt="" />
 			</section>
-			<section>
-				<div id="slogan">
-					<p id="slogantxt">
-						<span>
-							{' '}
+			<div id="content">
+				<section>
+					<div id="slogan">
+						<p id="slogantxt">
+							<span>
+								{' '}
 							Por um Brasil mais seguro
-							<br /> para pessoas LGBTQIA+
-						</span>{' '}
-					</p>
-					<img src={rainbow} alt="" />
-				</div>
-				<div id="presentationsection">
-					<img src={chat} alt="" />
-					<p id="presentationtext">
-						<span>It Is Safe?</span> é uma plataforma, em
+								<br /> para pessoas LGBTQIA+
+							</span>{' '}
+						</p>
+						<img src={rainbow} alt="" />
+					</div>
+					<div id="presentationsection">
+						<img src={chat} alt="" />
+						<p id="presentationtext">
+							<span>It Is Safe?</span> é uma plataforma, em
 						desenvolvimento, que visa a segurança da comunidade{' '}
-						<span>LGBTQIA+.</span>
+							<span>LGBTQIA+.</span>
 						Com a meta de informar sobre lugares seguros e abrir
 						espaço para a partilha de experiências, busca
 						representar uma comunidade que luta para existir com
 						direito dignidade e respeito todos os dias.
-					</p>
-				</div>
-			</section>
-			<section id="donation">
-				<div className="container">
-					<img id="handpointer" src={handpoint} alt="" />
-					<div className="call">
-						<p>
+						</p>
+					</div>
+				</section>
+				<section id="donation">
+					<div className="container">
+						<img id="handpointer" src={handpoint} alt="" />
+						<div className="call">
+							<p>
 							Nosso projeto não visa nenhum lucro e está sendo
 							construído através de <span>voluntários</span>, no
 							entanto contribuições financeiras nos ajudam
 							manter-lo e continuar o seu desenvolvimento. Se você
 							acredita na nossa causa e <span>gostaria</span> de
 							contribuir qualquer valor é muito bem-vindo.
-						</p>
-						<a className="button" href="donations">
+							</p>
+							<a className="button" href="donations">
 							Quero contribuir
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</>
 	);
 };

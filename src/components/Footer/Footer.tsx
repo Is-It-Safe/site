@@ -17,6 +17,13 @@ export const Footer = () => {
 					<a id="link" href="contato@isitsafe.com.br">
 						contato@isitsafe.com.br
 					</a>
+					<a id="link-mobile" href="privacy_policy">
+					Politica de Privacidade
+					</a>
+					<br />
+					<a id="link-mobile" href="terms_and_conditions">
+					Termos e Condições
+					</a>
 				</div>
 				<div  className="legal">
 					<a id="link" href="privacy_policy">

@@ -43,6 +43,19 @@ section p:not(.teamcard p) {
 	section {
 		padding: 10% 10% 0 10%;
 	}
+    
+	.contact__links
+	{
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 7%;
+		padding: 0%;
+	}
+	main{
+		padding-top: 15vh;
+	}
 
 	section p:not(.teamcard p) {
 		padding: 2% 0;
