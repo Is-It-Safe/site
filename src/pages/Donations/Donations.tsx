@@ -23,14 +23,15 @@ export const Donations = () => {
 							Para contribuir <span>financeiramente</span> com o
 							nosso projeto, você pode fazer um
 							<span>pix</span>, com qualquer valor, através da
-							nossa chave ou através da plataforma
-							<span>Gooders</span> clicando no botão abaixo.{' '}
+							nossa chave ou através da plataforma 
+							<span> Gooders</span> clicando no botão abaixo.{' '}
 						</p>
 					</div>
 				</div>
 
 				<div id="qrcode">
-					<span>Chave PIX: </span>e9203d92-f28e-4e4e-8ba2-761e3ab2e347
+					<img src="src/assets/qrcodedonation.png" alt="" />
+					<span>e9203d92-f28e-4e4e-8ba2-761e3ab2e347</span>
 				</div>
 
 				<div className="container" id="bannergooders">

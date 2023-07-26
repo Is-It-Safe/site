@@ -31,10 +31,11 @@ blockquote {
 	#about {
 		flex-direction: column-reverse;
 		display: flex;
+		
 	}
 
 	main{
-		padding-top: 10vh;
+		padding-top: 0%;
 	}
 
 	#comosurgiu {
@@ -43,6 +44,6 @@ blockquote {
 	}
 
 	div {
-		padding: 5% 0;
+		padding: 0%;
 	}
 }

@@ -24,22 +24,25 @@ export const Team = () => {
 						projeto, da uma olhadinha nas nossas vagas nos links
 						abaixo. <span>Todes são bem-vindes!</span>{' '}
 					</p>
-					<a
-						id="link"
-						href="https://www.atados.com.br/ong/is-it-safe"
-					>
+					<div className='contact__links'>
+						<a
+							id="link"
+							className='atados'
+							href="https://www.atados.com.br/ong/is-it-safe"
+						>
 						ATADOS
-					</a>
-					<a
-						id="link"
-						href=""
-						onClick={() => {
-							event?.preventDefault();
-							setShowModal(true);
-						}}
-					>
+						</a>
+						<a
+							id="link"
+							href=""
+							onClick={() => {
+								event?.preventDefault();
+								setShowModal(true);
+							}}
+						>
 						QUER SER VOLUNTÁRIO?
-					</a>
+						</a>
+					</div>
 				</section>
 				<section>
 					<p>

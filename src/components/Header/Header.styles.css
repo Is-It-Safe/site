@@ -51,7 +51,7 @@ nav {
 
 .btn-toggle {
 	position: relative;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	cursor: pointer;
 	user-select: none;
@@ -211,9 +211,17 @@ nav {
 	background-color: rgba(71, 62, 139, 1);
 }
 
-@media only screen and (max-width: 820px) {
+.topmenu__mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 912px) {
      #nav-geral {
 		display: none;
+	}
+
+	.btn-toggle {
+		display: flex;
 	}
 
 	.topmenu__mobile {
@@ -243,13 +251,6 @@ nav {
 	}
 
 	.follower {
-		display: none;
-	}
-}
-
-@media only screen and (min-width: 812px) {
-
-	.topmenu {
 		display: none;
 	}
 }
