@@ -57,14 +57,14 @@ export const Home = () => {
 					<div className="container">
 						<img id="handpointer" src={handpoint} alt="" />
 						<div className="call">
-							<p>
+							<div>
 							Nosso projeto não visa nenhum lucro e está sendo
 							construído através de <span>voluntários</span>, no
 							entanto contribuições financeiras nos ajudam
 							manter-lo e continuar o seu desenvolvimento. Se você
 							acredita na nossa causa e <span>gostaria</span> de
 							contribuir qualquer valor é muito bem-vindo.
-							</p>
+							</div>
 							<a className="button" href="donations">
 							Quero contribuir
 							</a>

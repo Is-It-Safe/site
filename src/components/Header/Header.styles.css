@@ -37,7 +37,7 @@ nav {
 #nav-geral {
 	position: relative;
 	display: flex;
-	padding: 5% 10%;
+	padding:  10%;
 	background: linear-gradient(
 		55deg,
 		rgba(71, 62, 139, 1) 0%,

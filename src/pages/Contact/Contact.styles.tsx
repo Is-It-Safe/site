@@ -9,6 +9,7 @@ export const ContactMain = styled.div`
 	margin: 5% 20% 10%;
 	@media only screen and (max-width: 912px) {
 		margin: 5% 10% 10%;
+		
 	}
 
 	@media only screen and (max-width: 500px) {
@@ -187,6 +188,9 @@ export const Title = styled.div`
 		margin-bottom: 49px;
 		font-size: 0.875rem;
 	}
+	@media only screen and (max-width: 912px) {
+		padding-top: 100px;
+	}
 `;
 
 export const Form = styled.form`
@@ -261,12 +265,12 @@ export const Button = styled.button`
 
 export const ImageContainer = styled.div`
 	width: 50%;
-	max-width: 300px;
+	max-width: 50%;
 	margin-left: 20px;
 
 	img {
-		width: 571px;
-		height: 405px;
+		width: 40vw;
+		height: auto;
 	}
 	@media only screen and (max-width: 912px) {
 		display: none;
