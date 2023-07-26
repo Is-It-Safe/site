@@ -1,4 +1,5 @@
 import gooderslogo from '../../assets/gooderslogo.png';
+import qrcodedonation from '../../assets/qrcodedonation.png';
 import { Header } from '../../components/Header/Header';
 
 import './Donations.styles.css';
@@ -30,7 +31,7 @@ export const Donations = () => {
 				</div>
 
 				<div id="qrcode">
-					<img src="src/assets/qrcodedonation.png" alt="" />
+					<img src={qrcodedonation} alt="" />
 					<span>e9203d92-f28e-4e4e-8ba2-761e3ab2e347</span>
 				</div>
 
