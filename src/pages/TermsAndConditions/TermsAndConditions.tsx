@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer/Footer';
 import { Header } from '../../components/Header/Header';
 
 import './TermsAndConditions.styles.css';
@@ -98,6 +99,7 @@ export const TermsAndConditions = () => {
 					</div>
 				</div>
 			</section>
+			<Footer/>
 		</>
 	);
 };

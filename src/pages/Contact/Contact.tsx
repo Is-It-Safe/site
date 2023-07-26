@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { UilTimes, UilInfoCircle } from '@iconscout/react-unicons';
 import SendEmail from '../../services/send-email';
 import * as Styles from './Contact.styles';
+import { Footer } from '../../components/Footer/Footer';
 
 export const Contact = () => {
 	const [email, setEmail] = useState<string>('');
@@ -133,6 +134,7 @@ export const Contact = () => {
 					</Styles.ImageContainer>
 				</Styles.FormContainer>
 			</Styles.ContactMain>
+			<Footer />
 		</>
 	);
 };

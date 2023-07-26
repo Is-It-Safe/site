@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer/Footer';
 import { Header } from '../../components/Header/Header';
 
 import './PrivacyPolicy.styles.css';
@@ -115,6 +116,7 @@ export const PrivacyPolicy = () => {
 					</div>
 				</div>
 			</section>
+			<Footer/>
 		</>
 	);
 };

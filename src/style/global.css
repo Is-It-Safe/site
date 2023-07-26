@@ -120,7 +120,24 @@ footer {
 	color: #5c45ed;
 }
 
+.error{
+	padding: 0%;
+	margin: 0%;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.error > h1{
+	color: black;
+}
+
 @media only screen and (max-width: 912px) {
+
 	body {
 		font-size: 0.7rem;
 	}
