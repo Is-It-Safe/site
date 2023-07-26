@@ -5,6 +5,7 @@ import { teamMembers } from '../../mocks/team';
 import emptyCard from '../../assets/teamcardimg.png';
 
 import './Team.styles.css';
+import { Footer } from '../../components/Footer/Footer';
 
 export const Team = () => {
 	const [showModal, setShowModal] = useState<boolean>(false);
@@ -67,6 +68,7 @@ export const Team = () => {
 					</div>
 				</section>
 			</main>
+			<Footer/>
 		</>
 	);
 };

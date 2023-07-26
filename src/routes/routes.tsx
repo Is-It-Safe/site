@@ -4,7 +4,7 @@ import { About } from '../pages/About/About';
 import { Contact } from '../pages/Contact/Contact';
 import { Donations } from '../pages/Donations/Donations';
 // import { useUser } from '../providers/UserProvider';
-
+import { Footer } from '../components/Footer/Footer';
 import { Home } from '../pages/Home/Home';
 import { Team } from '../pages/Team/Team';
 import { TermsAndConditions } from '../pages/TermsAndConditions/TermsAndConditions';
@@ -80,7 +80,7 @@ export const Router = () => {
 			/>
 			<Route
 				path="*"
-				element={<div style={{'height': '80vh'}} ><h1 className="text-white">Error 404</h1></div>}
+				element={<div className="error"  ><h1>Error 404</h1><Footer /></div>}
 			/>
 		</Routes>
 	);

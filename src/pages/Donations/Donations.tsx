@@ -1,5 +1,6 @@
 import gooderslogo from '../../assets/gooderslogo.png';
 import qrcodedonation from '../../assets/qrcodedonation.png';
+import { Footer } from '../../components/Footer/Footer';
 import { Header } from '../../components/Header/Header';
 
 import './Donations.styles.css';
@@ -52,6 +53,7 @@ export const Donations = () => {
 					</a>
 				</div>
 			</section>
+			<Footer />
 		</>
 	);
 };

@@ -7,6 +7,7 @@ import rainbow from '../../assets/rainbow.png';
 import handpoint from '../../assets/handpoint.png';
 import chat from '../../assets/chat.png';
 import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
 
 import './Home.styles.css';
 
@@ -72,6 +73,7 @@ export const Home = () => {
 					</div>
 				</section>
 			</div>
+			<Footer />
 		</>
 	);
 };

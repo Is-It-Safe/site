@@ -1,4 +1,5 @@
 import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
 import mockup2 from '../../assets/MOCKUP2-s.png';
 import avatarAbout from '../../assets/avatar-about-s.png';
 
@@ -78,6 +79,7 @@ export const About = () => {
 					</div>
 				</section>
 			</main>
+			<Footer />
 		</>
 	);
 };
