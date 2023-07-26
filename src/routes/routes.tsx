@@ -80,7 +80,7 @@ export const Router = () => {
 			/>
 			<Route
 				path="*"
-				element={<h1 className="text-white">Error 404</h1>}
+				element={<div style={{'height': '80vh'}} ><h1 className="text-white">Error 404</h1></div>}
 			/>
 		</Routes>
 	);
