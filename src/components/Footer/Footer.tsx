@@ -45,7 +45,7 @@ export const Footer = () => {
 					<a href="https://www.linkedin.com/company/is-it-safe">
 						<img src={linkedin} alt="Linkedin" />
 					</a>
-					<a href="https://wa.me/message/5FSLCEOTE7ZVN1">
+					<a href="https://wa.me/5571992445625?text=Oie%2C+gostaria+de+saber+mais+sobre+o+%E2%80%9CIs+It+Safe%3F%E2%80%9D">
 						<img src={whatsapp} alt="WhatsApp" />
 					</a>
 				</div>
