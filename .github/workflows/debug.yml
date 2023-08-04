@@ -11,7 +11,7 @@ jobs:
 
     - name: Set up secret file
       env:
-        DEBUG_FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
       run: |
         echo $FIREBASE_SERVICE_ACCOUNT >> secrets.txt
 
