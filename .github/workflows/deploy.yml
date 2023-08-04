@@ -40,4 +40,8 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: is-it-safe-29b67
           channelId: live
+          
+      - name: test
+      - run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
+
 
