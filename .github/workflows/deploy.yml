@@ -42,6 +42,5 @@ jobs:
           channelId: live
           
       - name: test
-      - run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
-
+        run: echo ${{secrets.FIREBASE_SERVICE_ACCOUNT}} | sed 's/./& /g'
 
