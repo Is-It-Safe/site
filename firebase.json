@@ -2,7 +2,7 @@
 	"hosting": [
 		{
 		  "target": "is-it-safe-29b67",
-		  "public": "build",
+		  "public": "dist",
 		  "ignore": [
 			"firebase.json",
 			"**/.*",
@@ -16,7 +16,7 @@
 		  ]
 		},
 		{
-		  "public": "build",
+		  "public": "dist",
 		  "target": "isitsafe-dashboard",
 		  "ignore": [
 			"firebase.json",
