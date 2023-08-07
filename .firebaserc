@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "is-it-safe-29b67"
-  }
+    "isitsafe": "is-it-safe-29b67"
+  },
+  "targets": {
+    "is-it-safe-29b67": {
+      "hosting": {
+        "is-it-safe-29b67": [
+          "is-it-safe-29b67"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
