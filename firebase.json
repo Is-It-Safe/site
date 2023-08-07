@@ -1,34 +1,12 @@
 {
-	"hosting": [
-		{
-		  "target": "is-it-safe-29b67",
-		  "public": "dist",
-		  "ignore": [
-			"firebase.json",
-			"**/.*",
-			"**/node_modules/**"
-		  ],
-		  "rewrites": [
+	"hosting": {
+		"public": "dist",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"rewrites": [
 			{
-			  "source": "**",
-			  "destination": "/index.html"
+				"source": "**",
+				"destination": "/index.html"
 			}
-		  ]
-		},
-		{
-		  "public": "dist",
-		  "target": "isitsafe-dashboard",
-		  "ignore": [
-			"firebase.json",
-			"**/.*",
-			"**/node_modules/**"
-		  ],
-		  "rewrites": [
-			{
-			  "source": "**",
-			  "destination": "/index.html"
-			}
-		  ]
-		}
-	  ]
+		]
+	}
 }
